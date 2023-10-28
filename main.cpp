@@ -8,14 +8,13 @@ void printRow(const int& , int );
 int main() {
     int rowNumber;
     cin >> rowNumber;
-    cout << endl;
-    printRow(rowNumber, 1);
+    printRow(rowNumber+1, 0);
 
     return 0;
 }
 
 void printRow(const int& rowNumber, int currentRow){
-    if(currentRow >= rowNumber*2){
+    if(currentRow > rowNumber*2){
         return;
     }
 
@@ -27,3 +26,16 @@ void printRow(const int& rowNumber, int currentRow){
 
     printRow(rowNumber, currentRow + 1);
 }
+
+//5
+//printf("     * \n"
+//"    * * \n"
+//"   * * * \n"
+//"  * * * * \n"
+//" * * * * * \n"
+//"* * * * * * \n"
+//" * * * * * \n"
+//"  * * * * \n"
+//"   * * * \n"
+//"    * * \n"
+//"     * \n");
